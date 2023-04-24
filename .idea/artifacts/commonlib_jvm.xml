@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="commonlib-jvm">
+    <output-path>$PROJECT_DIR$/libs/commonlib/build/libs</output-path>
+    <root id="archive" name="commonlib-jvm.jar">
+      <element id="module-output" name="Dokkatest.libs.commonlib.jvmMain" />
+    </root>
+  </artifact>
+</component>
