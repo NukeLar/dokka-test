@@ -1,3 +1,7 @@
+import org.jetbrains.dokka.Platform
+import org.jetbrains.dokka.gradle.DokkaPlugin
+import org.jetbrains.dokka.gradle.DokkaTaskPartial
+
 plugins {
     id("kotlin-multiplatform")
     id("com.android.library")
@@ -24,29 +28,26 @@ kotlin {
     }
 }
 
-apply<org.jetbrains.dokka.gradle.DokkaPlugin>()
+apply<DokkaPlugin>()
 
 val externalDocUrls = listOf(
     "https://d.android.com/reference/",
 )
 
-tasks.withType<org.jetbrains.dokka.gradle.DokkaTaskPartial>().configureEach {
+tasks.withType<DokkaTaskPartial>().configureEach {
     dokkaSourceSets {
-        register("combined") {
-            displayName.set("androidJvm")
-            platform.set(org.jetbrains.dokka.Platform.jvm)
-            sourceRoots.from(kotlin.sourceSets.getByName("androidMain").kotlin.srcDirs)
-            sourceRoots.from(kotlin.sourceSets.getByName("commonMain").kotlin.srcDirs)
-//            dependsOn("commonMain")
-//            dependsOn("androidMain")
-//            dependsOn("jvmMain")
-        }
+//        register("combined") {
+//            displayName.set("androidJvm")
+//            platform.set(Platform.jvm)
+//            sourceRoots.from(kotlin.sourceSets.getByName("androidMain").kotlin.srcDirs)
+//            sourceRoots.from(kotlin.sourceSets.getByName("commonMain").kotlin.srcDirs)
+//        }
         configureEach {
-            println("sourceSetName = $name")
+//            println("sourceSetName = $name")
 //            if (name.contains("jvm") || name.contains("android") || name.contains("common")) {
-//                documentedVisibilities.set(setOf())
+//                suppress.set(true)
 //            }
-            jdkVersion.set(9)
+            jdkVersion.set(8)
             skipDeprecated.set(true)
             skipEmptyPackages.set(true)
             includeNonPublic.set(false)

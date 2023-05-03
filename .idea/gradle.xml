@@ -10,14 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/apps" />
-            <option value="$PROJECT_DIR$/apps/app" />
             <option value="$PROJECT_DIR$/corelibs" />
             <option value="$PROJECT_DIR$/corelibs/corelib" />
             <option value="$PROJECT_DIR$/libs" />
-            <option value="$PROJECT_DIR$/libs/androidlib" />
-            <option value="$PROJECT_DIR$/libs/commonlib" />
-            <option value="$PROJECT_DIR$/libs/commonlib2" />
             <option value="$PROJECT_DIR$/libs/commonlib3" />
           </set>
         </option>
