@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/corelibs" />
             <option value="$PROJECT_DIR$/corelibs/corelib" />
+            <option value="$PROJECT_DIR$/corelibs/transitivelib" />
             <option value="$PROJECT_DIR$/libs" />
             <option value="$PROJECT_DIR$/libs/commonlib3" />
           </set>

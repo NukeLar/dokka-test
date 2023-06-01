@@ -16,4 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Dokkatest"
 include(":corelibs:corelib")
+include(":corelibs:transitivelib")
 include(":libs:commonlib3")

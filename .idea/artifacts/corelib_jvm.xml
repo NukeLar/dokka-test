@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="corelib-jvm">
+    <output-path>$PROJECT_DIR$/corelibs/corelib/build/libs</output-path>
+    <root id="archive" name="corelib-jvm.jar">
+      <element id="module-output" name="Dokkatest.corelibs.corelib.jvmMain" />
+    </root>
+  </artifact>
+</component>

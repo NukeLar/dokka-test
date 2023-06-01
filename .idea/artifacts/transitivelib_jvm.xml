@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="transitivelib-jvm">
+    <output-path>$PROJECT_DIR$/corelibs/transitivelib/build/libs</output-path>
+    <root id="archive" name="transitivelib-jvm.jar">
+      <element id="module-output" name="Dokkatest.corelibs.transitivelib.jvmMain" />
+    </root>
+  </artifact>
+</component>
